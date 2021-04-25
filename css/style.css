@@ -114,12 +114,10 @@ header{
 
 /*Doctor Section*/
 
-.doctor-1 {
-	background-color: #f9f9ff;
-	width: 49%;
-}
+
 
 .childDoctor div {
+	background-color: #f9f9ff;
 	margin: auto;
 	text-align: center;
 }

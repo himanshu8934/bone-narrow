@@ -1,8 +1,11 @@
 let testimonailCard = newData()
 let immnuneCard = Immnune()
+let doctorDetail = doctor()
 let test =document.querySelector('#testimonial');
-let Immunetest = document.querySelector('#immuneCard')
+let Immunetest = document.querySelector('#immuneCard');
+let doctortext = document.querySelector('#doctor');
 
+console.log(doctorDetail)
 $ ( `#marrowTransplant` )
   .click ( () => {
     $ ( `#marrowTransplantDesc` )
@@ -75,3 +78,33 @@ for(let card of immnuneCard)
 }
 
 Immunetest.innerHTML = immune;
+
+
+// Doctor Section
+
+
+let doc = ``;
+for(let card of doctorDetail ){
+  console.log(card)
+
+  doc += `<div class="childDoctor col-lg-5 col-md-7 col-sm-8 mr-lg-5 ml-sm-3">
+                <div>
+                  <h5 class="font-weight-bold heading5 mb-4 pt-4">${card.doctor_type}</h5>
+                  <img src="${card.image}" alt="" class="rounded mx-auto" >
+                  <h3 class="mt-3 nameHead">${card.doctor_Name}</h3>
+                  <p class="para1 mt-3">${card.doctor_position}</p>
+                  <p class="para2">${card.doctor_position2}</p>
+                  <div class="line"></div>
+                  <div class="paraDiv">
+                    <p class="doctorDesc">${card.text}</p>
+                  </div>
+
+                  <button class="btn btn-primary mt-3 mb-4 knowMore-Btn">Know More</button>
+                </div>
+              </div>`
+}
+ 
+doctortext.innerHTML = doc;
+
+ 
+

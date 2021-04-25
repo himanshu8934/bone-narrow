@@ -1,0 +1,9 @@
+const doctorCard = [ { id : 1, image : `image/doctor.png`, doctor_type:`Pediatric BMT`,doctor_Name : `Dr. Vijay Agarwal`, doctor_position : `MD, MRCP, PhD,CCT`, doctor_position2 : `Lead & Sr. Consultant - Medical Oncology & Haematology`, text : `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.`},
+                   { id : 2, image : `image/doctor.png`, doctor_type:`Pediatric BMT`,doctor_Name : `Dr. Vijay Agarwal`, doctor_position : `MD, MRCP, PhD,CCT`, doctor_position2 : `Lead & Sr. Consultant - Medical Oncology & Haematology`, text : `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.`},
+                   { id : 3, image : `image/doctor.png`, doctor_type:`Pediatric BMT`,doctor_Name : `Dr. Vijay Agarwal`, doctor_position : `MD, MRCP, PhD,CCT`, doctor_position2 : `Lead & Sr. Consultant - Medical Oncology & Haematology`, text : `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.`},
+                   { id : 4, image : `image/doctor.png`, doctor_type:`Pediatric BMT`,doctor_Name : `Dr. Vijay Agarwal`, doctor_position : `MD, MRCP, PhD,CCT`, doctor_position2 : `Lead & Sr. Consultant - Medical Oncology & Haematology`, text : `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.`},
+                   
+         
+              ]
+
+doctor  = () =>doctorCard;
