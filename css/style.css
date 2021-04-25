@@ -175,17 +175,24 @@ header{
 
 .warningSigns {
 	border: 1px solid #e5eaff;
-	width: 23%;
-	height: 160px;
+	width: 50%;
+	/*height: 160px;*/
 	margin-bottom: 25px;
 	background-color: #ffffff;
 }
+.warningSigns img{
+	width: 17%
 
-.warningPara {
-	width: 80%;
-	font-size: 13px;
-	margin-left: 20px;
 }
+.warningSigns p{
+	font-size: 14px;
+
+
+}
+.warningSigns:hover{
+	box-shadow: 0 0 20px #e7eaff;
+}
+
 
 /*marrow section*/
 .dropdowmPara {
