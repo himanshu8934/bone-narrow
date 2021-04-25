@@ -108,3 +108,111 @@ doctortext.innerHTML = doc;
 
  
 
+
+// Form Validation
+
+let validateForm = () => {
+  let validate = userName() && Email() && number() && message();
+          
+  if(validate){
+    alert('Submitted Successfully')
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+// userName validation
+let userName = () =>{
+  let user = document.querySelector('#name');
+  if(user.value ===''){
+    errorMsg('Name is Requried');
+    color(user,'orangered')
+
+    return false
+  }
+  else{
+    color(user,'limegreen');
+    return true
+  }
+}
+
+// Email Address
+let Email = () =>{
+  let email = document.querySelector('#email');
+  if(email.value ===''){
+    errorMsg('Email is Requried');
+    color(email,'orangered')
+
+    return false
+  }
+  else{
+    color(email,'limegreen');
+    return true
+  }
+}
+
+// Number
+let number = () =>{
+  let number = document.querySelector('#number');
+  if(number.value ===''){
+    errorMsg('Number is Requried');
+    color(number,'orangered')
+
+    return false
+  }
+  else{
+    if(number.value.length == 10){
+       color(number,'limegreen');
+    return true
+    }
+    else{
+      errorMsg('Enter max length:10');
+      return false
+    }
+   
+  }
+}
+
+// Text area
+
+let message = () =>{
+  let message = document.querySelector('#msg');
+  if(message.value ===''){
+    errorMsg('Message is Requried');
+    color(message,'orangered')
+
+    return false
+  }
+  else{
+    color(message,'limegreen');
+    return true
+  }
+}
+
+
+
+
+//apply color
+
+let color = (name,colors) =>{
+  name.style.color = colors;
+  name.style.boxShadow = `0 0 10px ${colors}`
+}
+
+// error Msg
+
+let errorMsg = (message) => {
+  let error = document.querySelector('#error-msg');
+  let heading = document.createElement("h3");
+  heading.innerText = message;
+  error.appendChild(heading);
+  setTimeout(remove,2000)
+}
+
+// remove Function
+
+let remove = () =>{
+  document.querySelector('#error-msg').remove();
+}
