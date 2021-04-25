@@ -4,13 +4,12 @@ let doctorDetail = doctor()
 let test =document.querySelector('#testimonial');
 let Immunetest = document.querySelector('#immuneCard');
 let doctortext = document.querySelector('#doctor');
+let toggleCard = toggleMethod()
+let tog = document.querySelector('#mainToggle');
+let BoneNarrow = BoneNarrowText()
+let boneMarroType =document.querySelector('#boneMarroType');
 
-console.log(doctorDetail)
-$ ( `#marrowTransplant` )
-  .click ( () => {
-    $ ( `#marrowTransplantDesc` )
-      .toggle ();
-  } );
+
 // Testimonial
  $ ( document )
   .ready ( () => {
@@ -85,7 +84,7 @@ Immunetest.innerHTML = immune;
 
 let doc = ``;
 for(let card of doctorDetail ){
-  console.log(card)
+  
 
   doc += `<div class="childDoctor col-lg-5 col-md-7 col-sm-8 mr-lg-5 ml-sm-3">
                 <div>
@@ -216,3 +215,70 @@ let errorMsg = (message) => {
 let remove = () =>{
   document.querySelector('#error-msg').remove();
 }
+
+
+// Toggle
+
+      let toggleTest = ``;
+      for(let tog of toggleCard){
+        toggleTest+=` <div class="marrowTransplant dropdowmPara mt-5">
+                <p class="marrowParagraph"  id="bone${tog.id}">
+                  ${tog.title}
+                  <span class="float-right"><img src="image/invertedTriangle.png" alt="" id="image${tog.id}" /></span>
+                </p>
+              </div>
+              <div class="marrowTransplantDesc mt-5" id="content${tog.id}">
+                <div class="d-flex mt-5">
+                  <span><img src="image/double-tick-indicator.png" alt="" class="mr-4" ></span>
+                  <p class="text-justify">${tog.content1}</p>
+                </div>
+                <div class="d-flex">
+                  <span><img src="image/double-tick-indicator.png" alt="" class="mr-4"></span>
+                  <p class="text-justify">${tog.content2}</p>
+                </div>
+              </div>
+              <hr />`
+      }
+
+
+      tog.innerHTML = toggleTest; 
+
+    $ ( `.marrowTransplantDesc` ).hide();
+      tog.addEventListener('click', doSomething)
+      
+     
+ function doSomething(e){
+        if(e.target !== e.currentTarget){
+          var clickItem = e.target.id;
+          toggleCard.map((e)=>{
+         
+          
+           if(`bone${e.id}` === clickItem || `image${e.id}` === clickItem ){
+            $(`#content${e.id}`).toggle()
+
+            
+           }
+          
+          })
+         
+          
+        }
+      }
+
+
+
+let bone = ``;
+for(let card of BoneNarrow){
+ 
+  bone += `<div class="row">
+  <div class="col-0">
+    <img src="image/plusLogo.png" alt="" />
+  </div>
+  <div class="col-11">
+    <p>${card.content}</p>
+  </div>
+</div>`
+}
+boneMarroType.innerHTML = bone;
+
+      

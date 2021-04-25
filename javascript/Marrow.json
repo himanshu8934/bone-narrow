@@ -1,0 +1,64 @@
+let toggle  = [
+			  	{
+			  		id:1,
+			  		title:`What are the conditions that requireBone Marrow Transplant?`,
+			  		content1:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    content2:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                   
+                    
+			  	},
+			  	{
+			  		id:2,
+			  		title:`What are the conditions that requireBone Marrow Transplant?`,
+			  		content1:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    content2:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    
+                    
+			  	},
+			  	{
+			  		id:3,
+			  		title:`Do bone marrow failure syndromes require BMT?`,
+			  		content1:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    content2:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                   
+                    
+			  	},
+			  	{
+			  		id:4,
+			  		title:`What are Primary Immune Deficiency diseases?`,
+			  		content1:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    content2:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                   
+                  
+			  	},
+			  	{
+			  		id:5,
+			  		title:`Which are the immune deficiencies that warrant BMT?`,
+			  		content1:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    content2:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    
+                  
+			  	},
+			  	{
+			  		id:6,
+			  		title:`What makes transplants at Aster CMI unique?`,
+			  		content1:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                    content2:` BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like
+                    Aplastic anemia, serious immune deficiencies and certain genetic metabolic disorders.`,
+                   
+                  
+			  	},
+			  ]
+toggleMethod = () =>toggle
+
